@@ -1,0 +1,13 @@
+<div style="margin-top: 100px;" class="container">
+  <h2 class="text-center" style="margin-top:100px;">Création d'un nouveau produit.</h2>
+  <div class="form-inputs col-6 offset-3">
+    <%= simple_form_for [@year, @month] do |f| %>
+    <%= f.input :name, label: "Nom" %>
+    <%= f.input :number, label: "No" %>
+    <div class="upload-btn-wrapper">
+    </div>
+  <div class="form-actions">
+    <p class="text-center"><%= f.button :submit, "CRÉER", class: "cart-btn" %></p>
+  </div>
+  <% end %>
+</div>

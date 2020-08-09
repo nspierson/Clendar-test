@@ -2,7 +2,7 @@ class CreateWeeks < ActiveRecord::Migration[5.2]
   def change
     create_table :weeks do |t|
       t.integer :number
-      t.references :month, foreign_key: true
+      t.references :months, foreign_key: true
 
       t.timestamps
     end

@@ -1,3 +1,4 @@
 class Week < ApplicationRecord
-  belongs_to :month
+  belongs_to :months, optional: true
+  has_many :days
 end
